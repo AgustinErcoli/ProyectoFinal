@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--aca van todos los links del css y fonts-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Nombre de la pagina/seccion-->
+    <title>Capueat | Menú</title>
+    <!--Keywords de la pagina web-->
+    <meta name="keywords" content="sushi, combo, vegano, vegetariano, capueat, clasico, salmon, premium, pescado, arroz, comida, tamago, niguiris"/>
+    <!--Descripcion de la pagina web-->
+    <meta name="description" content="Compra todo tipo de sushi online, rápido y fácil. Hacé tu pedido con anticipación durante la semana y te lo entregamos entre el viernes y el sabado"/>
+</head>
+<body class="body">
+  <!--Aca esta el encabezado hecho con boostrap-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <img src="../imagenes/logoEmprendimiento.png" class="navbar-image"></img>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Menú</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="estructura/SobreNosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="estructura/Productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="estructura/Carrito.html">Carrito</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="estructura/Contactanos.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <h1 class="titulo">Menú</h1>
+    <!--aca iria un slider con 3 fotos de lo mas vendido-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/rollsVegetarianosEspeciales.png" alt="Imagen de rolls calientes" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/rollsCalientes.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/rollsVeganos.png" alt="Imagen de rolls veganos" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--En este apartado van todos los combos-->
+    <div>
+        <p class="subtitulo"><strong>Combos</strong></p>
+        <div class="Combos">
+            <div id="Clasico">
+                <p class="lead"><strong>Clásico:</strong></p>
+                <p class="fuente">12 piezas $590</p>
+                <p class="fuente">24 piezas $1150</p>
+                <img src="imagenes/rollsClasicos.png" alt="Imagen de rolls clasicos" alt="Imagen de combo 1" class="Combos__imagen">
+                <p><button class="Combos__button">Agregar al carrito</button></p>
+            </div>
+            <div id="salmón">
+                <p class="lead"><strong>Salmón:</strong></p>
+                <p class="fuente">12 piezas $600</p>
+                <p class="fuente">24 piezas $1200</p>
+                <img src="imagenes/comboSalmon.png" alt="Imagen de combo salmon" class="Combos__imagen">
+                <p><button class="Combos__button">Agregar al carrito</button></p>
+            </div>
+            <div id="premium">
+                <p class="lead"><strong>Premium:</strong></p>
+                <p class="fuente">12 piezas $750</p>
+                <p class="fuente">24 piezas $1500</p>
+                <img src="imagenes/comboPremium.png" alt="Imagen de combo premium" class="Combos__imagen">
+                <p><button class="Combos__button">Agregar al carrito</button></p>
+            </div>
+            <div id="veggie">
+                <p class="lead"><strong>Veggie:</strong></p>
+                <p class="fuente">12 piezas $570</p>
+                <p class="fuente">24 piezas $1100</p>
+                <img src="imagenes/veggies.jpg" class="Combos__imagen">
+                <p><button class="Combos__button">Agregar al carrito</button></p>
+            </div>
+            <div id="vegan">
+                <p class="lead"><strong>Vegan:</strong></p>
+                <p class="fuente">24 piezas $600</p>
+                <p class="fuente">24 piezas $1200</p>
+                <img src="imagenes/rollsVeganos.png" alt="Imagen de combo vegan" class="Combos__imagen">
+                <p><button class="Combos__button">Agregar al carrito</button></p>
+            </div>
+        </div>
+    </div>
+    <!--aca esta el footer-->
+    <footer class="Footer">
+      <!--logo del emprendimiento-->
+        <div>
+            <img src="../imagenes/logoEmprendimiento.png" alt="Logo del emprendimiento" class="Footer__imagen">
+        </div>
+        <!--lista de productos-->
+        <div>
+            <strong class="Footer__titulo">Lista de productos</strong>
+            <ol class="Footer__lista">
+                <li><a href="estructura/Productos.html">Variedades</a></li>
+                <li><a href="estructura/Productos.html">Vegetarianos</a></li>
+                <li><a href="estructura/Productos.html">Veganos</a></li>
+            </ol>
+        </div>
+        <!--aca van las redes sociales-->
+        <div>    
+            <strong class="Footer__titulo">Mis redes sociales</strong>
+            <div>
+                <a href="https://www.instagram.com/capueat/">@capueat</a>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=541130410405&text=%F0%9F%8D%A3%20Capueat%F0%9F%A5%A2%0AHola!%20Quisiera%20hacer%20un%20pedido%20y%2Fo%20una%20consulta">whatsapp</a>
+            </div>
+            <div>
+                @Mi.Facebook
+            </div>
+            <div>
+                Capueat@gmail.com
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,869 @@
+/* variables */
+$altoImagen: 600px;
+$anchoImagen: 600px;
+$verde: #008000;
+$gris: #808080;
+$negro: #000000;
+$TamañoFuente: 24px;
+/* color del fondo */
+.body{
+    background-image: linear-gradient(to top, $negro, #000000d7);
+    color: #009d7c;
+}
+/* cambia el color del fondo y la posicion del footer */
+.Footer{
+    background-color: #009d7c;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color: black;
+}
+/* cambia el tamaño del titulo del footer */
+.Footer__titulo{
+    font-size: ($TamañoFuente/1)-4;
+}
+/* cambia el tamaño de la imagen del footer */
+.Footer__imagen{
+    width: ($anchoImagen/4)-20;
+    height: ($altoImagen/4)-20;
+}
+/* le agrega una animacion a la imagen del footer */
+.Footer__imagen:hover{
+    transition: 1s;
+    width: $anchoImagen/4;
+    height: $altoImagen/4;
+}
+/* cambia el estilo de la lista */
+.Footer__lista{
+    display: block;
+    list-style: circle;
+}
+/* organiza la seccion de carrito en columnas y lineas */
+.Carrito{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 150px 150px 150px;
+    justify-items: center;
+}
+/* fuente de letra */
+.Carrito__fuente{
+    font-style: 'ubuntu';
+    font-family: 'Ubuntu', sans-serif;
+}
+/* tamaño y color del titulo */
+.Carrito__titulo{
+    font-size: ($TamañoFuente/2)+8;
+    color: lightBlue;
+}
+/* cambia el tamaño y el color de los botones */
+.Carrito__button{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #009d7c;
+    border-color: #003e80;
+    margin-top: 10px;
+}
+/* organiza la seccion de Productos-variedades en columnas y lineas */
+.ProductosVariedades{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px 500px 400px 400px 400px;
+    justify-items: start;
+    padding-left: 250px;
+    grid-row-gap: 10px;
+}
+/* cambia el tamaño y la forma de las imagenes */
+.ProductosVariedades__imagen{
+    border-radius: 20px;
+    width: $anchoImagen/2;
+    height: $altoImagen/2;
+}
+/* fuente de letra */
+.ProductosVariedades__fuente{
+    font-style: 'ubuntu';
+    font-family: 'Ubuntu', sans-serif;
+}
+/* cambia el color de el texto a gris */
+.ProductosVariedades__fuente--comentario{
+    color: $gris;
+}
+/* cambia el tamaño y el color de los botones */
+.ProductosVariedades__button{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #009d7c;
+    border-color: #003e80;
+    margin-top: 10px;
+}
+/* organiza la seccion de productos-vegetarianos en columnas y lineas */
+.ProductosVegetarianos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 400px 400px;
+    justify-items: start;
+    padding-left: 250px;
+}
+/* cambia el tamaño y la forma de las imagenes */
+.ProductosVegetarianos__imagen{
+    border-radius: 20px;
+    width: $anchoImagen/2;
+    height: $altoImagen/2;
+}
+/* fuente de letra */
+.ProductosVegetarianos__fuente{
+    font-style: 'ubuntu';
+    font-family: 'Ubuntu', sans-serif;
+}
+/* cambia el color de el texto a gris */
+.ProductosVegetarianos__fuente--comentario{
+    color: $gris;
+}
+/* cambia el tamaño y el color de los botones */
+.ProductosVegetarianos__button{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #009d7c;
+    border-color: #003e80;
+    margin-top: 10px;
+}
+/* organiza la seccion de productos-veganos en columnas y lineas */
+.ProductosVeganos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px;
+    justify-items: start;
+    padding-left: 250px;
+}
+/* cambia el tamaño y la forma de las imagenes */
+.ProductosVeganos__imagen{
+    border-radius: 20px;
+    width: $anchoImagen/2;
+    height: $altoImagen/2;
+}
+/* fuente de letra */
+.ProductosVeganos__fuente{
+    font-style: 'ubuntu';
+    font-family: 'Ubuntu', sans-serif;
+}
+/* cambia el tamaño y el color de los botones */
+.ProductosVeganos__button{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #009d7c;
+    border-color: #003e80;
+    margin-top: 10px;
+}
+/* organiza la seccion de combos en columnas y lineas */
+.Combos{
+    display: grid;
+    grid-template-areas:
+    "Clasico salmón"
+    "premium veggie"
+    "vegan vegan";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 510px 510px 510px;
+    align-items: center;
+    justify-items: center;
+}
+/* le asigna un id a Clasico */
+#clasico{
+    grid-area: Clasico;
+}
+/* le asigna un id a Salmon */
+#salmon{
+    grid-area: salmón;
+}
+/* le asigna un id a Premium */
+#premium{
+    grid-area: premium;
+}
+/* le asigna un id a Veggie */
+#veggie{
+    grid-area: veggie;
+}
+/* le asigna un id a Vegan */
+#vegan{
+    grid-area: vegan;
+}
+/* Cambia el tamaño y la forma de las fotos */
+.Combos__imagen{
+    border-radius: 20px;
+    width: $anchoImagen/2;
+    height: $altoImagen/2;
+}
+/* cambia el tamaño y el color de los botones */
+.Combos__button{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #009d7c;
+    border-color: #003e80;
+    margin-top: 10px;
+}
+/* organiza la seccion de sobre nosotros en columnas y lineas */
+.SobreNosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 200px;
+}
+/* cambia el color y la posicion de la tabla */
+.SobreNosotros__tabla{
+    background-color: #009d7c;
+    border: solid 5px #003e80;
+    padding: 10px;
+    display: inline-block;
+    overflow: hidden;
+    color: $negro;
+}
+/* fuente de letra */
+.SobreNosotros__fuente{
+    font-style: 'ubuntu';
+    font-family: 'Ubuntu', sans-serif;
+}
+/* tamaño del titulo */
+.SobreNosotros__titulo{
+    font-size: ($TamañoFuente/2)+10;
+}
+/* organiza el formulario en columnas y lineas */
+.Formulario{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 100px 100px 200px 50px;
+}
+/* le cambia el tamaño al cuadro de texto */
+.Formulario__CuadroDeTexto{
+    width: 200px;
+    height: 2fr;
+}
+/* le cambia el tamaño al cuadro de texto del comentario */
+.Formulario__CuadroDeTexto--comentario{
+    width: 300px;
+    height: 10rem;
+}
+/* le cambia el tamaño y el color a la letra del formulario */
+.Formulario__fuente{
+    font-size: ($TamañoFuente/2)+6;
+    color: #009d7c;
+}
+/* le cambia el tamaño y el color a la letra del comentario*/
+.comentario{
+    color: $gris;
+    font-size: ($TamañoFuente/2)+4;
+}
+/* le agrega una animacion a los botones */
+button:hover{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+    animation:  pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0.1);
+    }
+
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 25px rgba(256, 256, 256, 0);
+    }
+
+    100%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+    }
+}
+/* cambia la posicion y el tamaño del titulo */
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: ($TamañoFuente*2)+2;
+}
+/* cambia la posicion y el tamaño del subtitulo */
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font-size: ($TamañoFuente*2)-13;
+}
+/* le cambia el color a los links */
+a{
+    text-decoration: none;
+    color: #110080 !important;
+}
+/* cambia la posicion de los elementos */
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+/* cambia el tamaño del slider o carousel */
+.carousel {
+    width: 600px;
+    height: 500px;
+    margin-left: 370px;
+    margin-bottom: 300px;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    margin-top: 300px;
+}
+/* organiza la seccion de contactanos en columnas y lineas */
+.flexContactanos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar-image{
+    width: 50px;
+    height: 50px;
+}
+/* adapta los elementos de la pagina web a la resolucion de 1200px */
+@media only screen and (max-width: 1200px)
+{
+    .Combos__imagen{
+        width: $anchoImagen -200;
+        height: $altoImagen -200;
+    }
+    .Footer__imagen{
+        width: ($anchoImagen/4)+10;
+        height: ($altoImagen/4)+10;
+    }
+    .Footer__imagen:hover{
+        transition: 1s;
+        width: ($anchoImagen/3)-10;
+        height: ($altoImagen/3)-10;
+    }
+    .Combos{
+        display: grid;
+        grid-template-rows: 600px 600px 600px;
+        align-items: center;
+        justify-items: center;
+        font-size: $TamañoFuente;
+    }
+    .Footer__titulo{
+        font-size: ($TamañoFuente/2)+14;
+    }
+    .Footer{
+        font-size: $TamañoFuente;
+    }
+    .Combos__button{
+        width: 250px;
+        height: 40px;
+    }
+    .navbar{
+        height: 75px;
+        font-size: ($TamañoFuente/2)+8;
+    }
+    .carousel{
+        margin-left: 310px;
+        width: 600px;
+        height: 600px;
+        margin-bottom: 220px;
+        }
+        .carousel-control-next, .carousel-control-prev{
+        margin-top: 200px;
+    }
+    .SobreNosotros{
+        display: grid;
+        grid-template-rows: 100px 350px;
+        font-size: ($TamañoFuente*2)-18;
+    }
+    .comentario{
+        font-size: ($TamañoFuente/2)+10;
+    }
+    .Formulario{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 300px 50px;
+    }
+    .Formulario__CuadroDeTexto{
+    width: 550px;
+    height: 3rem;
+    }
+    .Formulario__CuadroDeTexto--comentario{
+        width: 550px;
+        height: 13rem;
+    }
+    .Formulario__fuente{
+        font-size: ($TamañoFuente/2)+8;
+        color: $verde;
+    }
+    .Carrito{
+        font-size: $TamañoFuente;
+    }
+    .Carrito__button{
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        margin-top: 20px;
+        font-size: ($TamañoFuente/2)+6;
+    }
+    .ProductosVariedades{
+        display: grid;
+        grid-template-rows: 550px 770px 400px 380px 420px;
+        font-size: ($TamañoFuente/2)+8;
+    }
+    .ProductosVariedades__imagen{
+        width: ($anchoImagen/4)+200;
+        height: ($altoImagen/4)+200;
+    }
+    .ProductosVariedades__button{
+        height: 40px;
+        width: 200px;
+        margin-top: 20px;
+    }
+    .ProductosVegetarianos{
+        display: grid;
+        grid-template-rows: 400px 500px 380px 370px;
+        font-size: ($TamañoFuente/2)+8;
+    }
+    .ProductosVegetarianos__imagen{
+        width: ($anchoImagen/4)+200;
+        height: ($altoImagen/4)+200;
+    }
+    .ProductosVegetarianos__button{
+        height: 40px;
+        width: 200px;
+        margin-top: 20px;
+    }
+    .ProductosVeganos{
+        display: grid;
+        grid-template-rows: 550px;
+        font-size: ($TamañoFuente/2)+8;
+    }
+    .ProductosVeganos__imagen{
+        width: ($anchoImagen/4)+200;
+        height: ($altoImagen/4)+200;
+    }
+    .ProductosVeganos__button{
+        height: 40px;
+        width: 200px;
+        margin-top: 20px;
+    }
+}
+/* adapta los elementos de la pagina web a la resolucion de 600px */
+@media only screen and (max-width: 600px)
+{
+    .Combos__imagen{
+        width: $anchoImagen/3;
+        height: $altoImagen/3;
+    }
+    .Footer__imagen{
+        width: ($anchoImagen/4)-40;
+        height: ($anchoImagen/4)-40;
+    }
+    .Footer__imagen:hover{
+        transition: 1s;
+        width: ($anchoImagen/4)-20;
+        height: ($altoImagen/4)-20;
+    }
+    .Combos__button{
+        font-size: ($TamañoFuente/2)+2;
+        width: 150px;
+        height: 30px;
+    }
+    .Combos{
+        display: grid;
+        grid-template-rows: 425px 425px 425px;
+        align-items: center;
+        justify-items: center;
+        font-size: ($TamañoFuente/2)+6;
+    }
+    .Footer{
+        width: 100%;
+        font-size: ($TamañoFuente/2)+4;
+    }
+    .titulo{
+        font-size: $TamañoFuente;
+    }
+    .subtitulo{
+        font-size: ($TamañoFuente/2)+10;
+    }
+    .Footer__titulo{
+        font-size: ($TamañoFuente/2)+8;
+    }
+    .carousel{
+        margin-left: 125px;
+        width: 350px;
+        height: 350px;
+        margin-bottom: 150px;
+        }
+        .carousel-control-next, .carousel-control-prev{
+        margin-top: 90px;
+    }
+    .navbar{
+        height: 250px;
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .SobreNosotros{
+        display: grid;
+        grid-template-rows: 70px 200px;
+    }
+    .comentario{
+        font-size: ($TamañoFuente/2)+4;
+    }
+    .Formulario{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 200px 50px;
+    }
+    .Formulario__CuadroDeTexto{
+    width: 250px;
+    height: 2rem;
+    }
+    .Formulario__CuadroDeTexto--comentario{
+        width: 250px;
+        height: 10rem;
+    }
+    .Formulario__fuente{
+        font-size: ($TamañoFuente/2)+4;
+        color: $verde;
+    }
+    .ProductosVariedades{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 470px 720px 300px 270px 340px;
+        justify-items: center;
+        grid-row-gap: 10px;
+        font-size: ($TamañoFuente/2)+4;
+    }
+    .ProductosVariedades__imagen{
+        border-radius: 20px;
+        width: ($anchoImagen/4)+100;
+        height: ($altoImagen/4)+100;
+    }
+    .ProductosVariedades__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .ProductosVegetarianos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 270px 450px 270px 320px;
+        justify-items: center;
+        font-size: ($TamañoFuente/2)+4;
+    }
+    .ProductosVegetarianos__imagen{
+        border-radius: 20px;
+        width: ($anchoImagen/4)+100;
+        height: ($altoImagen/4)+100;
+    }
+    .ProductosVegetarianos__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .ProductosVeganos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 550px;
+        justify-items: center;
+        font-size: ($TamañoFuente/2)+4;
+    }
+    .ProductosVeganos__imagen{
+        border-radius: 20px;
+        width: ($anchoImagen/4)+100;
+        height: ($altoImagen/4)+100;
+    }
+    .ProductosVeganos__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
+/* adapta los elementos de la pagina web a la resolucion de 480px */
+@media only screen and (max-width: 480px)
+{
+    .Combos__imagen{
+        width: $anchoImagen/4;
+        height: $altoImagen/4;
+    }
+    .Footer__imagen{
+        width: ($anchoImagen/6)-20;
+        height: ($altoImagen/6)-20;
+    }
+    .Footer__imagen:hover{
+        transition: 1s;
+        width: ($anchoImagen/6);
+        height: ($altoImagen/6);
+    }
+    .Combos__button{
+        font-size: $TamañoFuente/2;
+        width: 120px;
+        height: 30px;
+    }
+    .Combos{
+        display: grid;
+        grid-template-rows: 375px 375px 375px;
+        align-items: center;
+        justify-items: center;
+        font-size: ($TamañoFuente/2)+4;
+    }
+    .Footer{
+        width: 100%;
+        font-size: $TamañoFuente/2;
+    }
+    .titulo{
+        font-size: ($TamañoFuente/2)+10;
+    }
+    .subtitulo{
+        font-size: ($TamañoFuente/2)+8;
+    }
+    .Footer__titulo{
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .carousel{
+        margin-left: 90px;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 150px;
+        }
+        .carousel-control-next, .carousel-control-prev{
+        margin-top: 70px;
+    }
+    .navbar{
+        height: 240px;
+        font-size: $TamañoFuente/2;
+    }
+    .SobreNosotros{
+        display: grid;
+        grid-template-rows: 70px 200px;
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .comentario{
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .Formulario{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 200px 50px;
+    }
+    .Formulario__CuadroDeTexto{
+    width: 200px;
+    height: 2rem;
+    }
+    .Formulario__CuadroDeTexto--comentario{
+        width: 200px;
+        height: 10rem;
+    }
+    .Formulario__fuente{
+        font-size: ($TamañoFuente/2)+2;
+        color: $verde;
+    }
+    .ProductosVariedades{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 450px 700px 280px 250px 320px;
+        justify-items: center;
+        grid-row-gap: 10px;
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .ProductosVariedades__imagen{
+        border-radius: 20px;
+        width: ($anchoImagen/4)+50;
+        height: ($altoImagen/4)+50;
+    }
+    .ProductosVariedades__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .ProductosVegetarianos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 250px 420px 250px 300px;
+        justify-items: center;
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .ProductosVegetarianos__imagen{
+        border-radius: 20px;
+        width: ($anchoImagen/4)+50;
+        height: ($altoImagen/4)+50;
+    }
+    .ProductosVegetarianos__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .ProductosVeganos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 550px;
+        justify-items: center;
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .ProductosVeganos__imagen{
+        border-radius: 20px;
+        width: ($anchoImagen/4)+50;
+        height: ($altoImagen/4)+50;
+    }
+    .ProductosVeganos__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        border-color: $verde;
+        margin-top: 10px;
+    }
+}
+/* adapta los elementos de la pagina web a la resolucion de 320px */
+@media only screen and (max-width: 320px)
+{
+    .Footer{
+        width: 100%;
+        font-size: ($TamañoFuente/2)-4;
+    }
+    .titulo{
+        font-size: ($TamañoFuente/2)+4;
+    }
+    .subtitulo{
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .Footer__titulo{
+        font-size: ($TamañoFuente/2)-2;
+    }
+    .Combos{
+        display: grid;
+        grid-template-rows: 300px 300px 300px;
+        align-items: center;
+        justify-items: center;
+        font-size: $TamañoFuente/2;
+    }
+    .Combos__button{
+        font-size: ($TamañoFuente/2)-4;
+        width: 65px;
+    }
+    .Combos__imagen{
+        width: ($anchoImagen/4)-30;
+        height: ($altoImagen/4)-30;
+    }
+    .Footer__imagen{
+        width: $anchoImagen/12;
+        height: $altoImagen/12;
+    }
+    .Footer__imagen:hover{
+        transition: 1s;
+        width: ($anchoImagen/6)-30;
+        height: ($altoImagen/6)-30;
+    }
+    .carousel{
+        margin-left: 60px;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 100px;
+        }
+        .carousel-control-next, .carousel-control-prev{
+        margin-top: 50px;
+    }
+    .navbar{
+        height: 225px;
+        font-size: ($TamañoFuente/2)-2;
+    }
+    .lead{
+        font-size: ($TamañoFuente/2)+4!important;
+    }
+    .comentario{
+        font-size: $TamañoFuente/2;
+    }
+    .SobreNosotros{
+        font-size: $TamañoFuente/2;
+        display: grid;
+        grid-template-rows: 50px 200px;
+    }
+    .Formulario{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 200px 50px;
+    }
+    .Formulario__CuadroDeTexto{
+    width: 150px;
+    height: 2rem;
+    }
+    .Formulario__CuadroDeTexto--comentario{
+        width: 150px;
+        height: 10rem;
+    }
+    .Formulario__fuente{
+        font-size: ($TamañoFuente/2)-2;
+        color: $verde;
+    }
+    .Carrito__titulo{
+        font-size: ($TamañoFuente/2)+8;
+    }
+    .Carrito__button{
+        height: 25px;
+        width: 100px;
+        border-radius: 10px;
+        margin-top: 10px;
+        font-size: ($TamañoFuente/2)-2;
+    }
+    .ProductosVariedades{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 450px 700px 280px 250px 300px;
+        justify-items: center;
+        grid-row-gap: 10px;
+        font-size: $TamañoFuente/2;
+    }
+    .ProductosVariedades__imagen{
+        border-radius: 20px;
+        width: $anchoImagen/4;
+        height: $altoImagen/4;
+    }
+    .ProductosVariedades__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .ProductosVegetarianos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 250px 420px 250px 300px;
+        justify-items: center;
+        font-size: $TamañoFuente/2;
+    }
+    .ProductosVegetarianos__imagen{
+        border-radius: 20px;
+        width: $anchoImagen/4;
+        height: $altoImagen/4;
+    }
+    .ProductosVegetarianos__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .ProductosVeganos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 550px;
+        justify-items: center;
+        font-size: $TamañoFuente/2;
+    }
+    .ProductosVeganos__imagen{
+        border-radius: 20px;
+        width: $anchoImagen/4;
+        height: $altoImagen/4;
+    }
+    .ProductosVeganos__button{
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}

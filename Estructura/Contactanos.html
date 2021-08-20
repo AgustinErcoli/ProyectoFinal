@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--aca van todos los links del css y fonts-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--Nombre de la pagina/seccion-->
+    <title>Capueat | Contactanos</title>
+    <!--Keywords de la pagina web-->
+    <meta name="keywords" content="sushi, combo, vegano, vegetariano, capueat, clasico, salmon, premium, pescado, arroz, comida, tamago, niguiris"/>
+    <!--Descripcion de la pagina web-->
+    <meta name="description" content="Compra todo tipo de sushi online, rápido y fácil. Hacé tu pedido con anticipación y te lo entregamos entre el viernes y el sabado"/>
+</head>
+<body class="body">
+  <!--Aca esta el encabezado hecho con boostrap-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <img src="../imagenes/logoEmprendimiento.png" class="navbar-image"></img>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Menú</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Carrito.html">Carrito</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contactanos.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <h1 class="titulo"><strong>Contactanos</strong></h1>
+    <div class="centrar">
+        <p class="comentario">Si tiene alguna consulta, rellene este formulario y lo responderemos dentro de las proximas 72 horas</p>
+    </div>
+    <!--Aca va un formulario para hacer alguna consulta sobre el emprendimiento-->
+    <form class="Formulario">
+        <div class="mb-3">
+            <label for="nombre" class="Formulario__fuente">Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="Formulario__CuadroDeTexto">
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="Formulario__fuente">Apellido</label>
+            <input type="text" name="apellido" placeholder="Ingresa tu apellido" class="Formulario__CuadroDeTexto">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="Formulario__fuente">Direccion de correo</label>
+          <input type="email" id="exampleInputEmail1" placeholder="ingresa tu correo" class="Formulario__CuadroDeTexto">
+        </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="Formulario__fuente">Contraseña</label>
+          <input type="password" id="exampleInputPassword1" placeholder="ingresa tu contraseña" class="Formulario__CuadroDeTexto">
+        </div>
+        <div class="mb-3">
+          <label for="hombre" class="Formulario__fuente">Hombre</label>
+          <input type="radio" name="genero" value="hombre" id="hombre">
+          <label for="mujer" class="Formulario__fuente">Mujer</label>
+          <input type="radio" name="genero" value="mujer" id="mujer">
+        </div>
+        <div class="mb-3">
+            <label for="comentario" class="Formulario__fuente">Comentario</label>
+            <textarea name="comentario" placeholder="ingresa tu comentario" class="Formulario__CuadroDeTexto--comentario"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        <div>
+            <button type="reset" class="btn btn-primary">Borrar</button>
+        </div>
+    </form>
+    <!--aca esta el footer-->
+    <footer class="Footer">
+      <!--logo del emprendimiento-->
+      <div>
+        <img src="../imagenes/logoEmprendimiento.png" alt="Logo del emprendimiento" class="Footer__imagen">
+    </div>
+    <!--lista de productos-->
+      <div>
+          <strong class="Footer__titulo">Lista de productos</strong>
+          <ol class="Footer__lista">
+              <li><a href="Productos.html">Variedades</a></li>
+              <li><a href="Productos.html">Vegetarianos</a></li>
+              <li><a href="Productos.html">Veganos</a></li>
+          </ol>
+      </div>
+      <!--aca van las redes sociales-->
+      <div>    
+          <strong class="Footer__titulo">Mis redes sociales</strong>
+          <div>
+              <a href="https://www.instagram.com/capueat/">@capueat</a>
+          </div>
+          <div>
+              <a href="https://api.whatsapp.com/send?phone=541130410405&text=%F0%9F%8D%A3%20Capueat%F0%9F%A5%A2%0AHola!%20Quisiera%20hacer%20un%20pedido%20y%2Fo%20una%20consulta">whatsapp</a>
+          </div>
+          <div>
+              @Mi.Facebook
+          </div>
+          <div>
+            Capueat@gmail.com
+          </div>
+      </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
