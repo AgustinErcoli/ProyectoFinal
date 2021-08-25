@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+  flex-wrap: wrap;
   padding-bottom: 25px;
   padding-top: 25px;
   color: black; }
@@ -303,7 +304,7 @@ a {
   display: flex;
   justify-content: space-evenly; }
 
-.navbar-image {
+.navbar__image {
   width: 50px;
   height: 50px; }
 
@@ -373,7 +374,8 @@ a {
   .ProductosVariedades {
     display: grid;
     grid-template-rows: 550px 770px 400px 380px 420px;
-    font-size: 20px; }
+    font-size: 20px;
+    padding-left: 150px; }
   .ProductosVariedades__imagen {
     width: 350px;
     height: 350px; }
@@ -384,7 +386,8 @@ a {
   .ProductosVegetarianos {
     display: grid;
     grid-template-rows: 400px 500px 380px 370px;
-    font-size: 20px; }
+    font-size: 20px;
+    padding-left: 150px; }
   .ProductosVegetarianos__imagen {
     width: 350px;
     height: 350px; }
@@ -394,8 +397,9 @@ a {
     margin-top: 20px; }
   .ProductosVeganos {
     display: grid;
-    grid-template-rows: 550px;
-    font-size: 20px; }
+    grid-template-rows: 600px;
+    font-size: 20px;
+    padding-left: 150px; }
   .ProductosVeganos__imagen {
     width: 350px;
     height: 350px; }
@@ -467,10 +471,10 @@ a {
   .ProductosVariedades {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 470px 720px 300px 270px 340px;
-    justify-items: center;
+    grid-template-rows: 470px 750px 300px 270px 340px;
     grid-row-gap: 10px;
-    font-size: 16px; }
+    font-size: 16px;
+    padding-left: 30px; }
   .ProductosVariedades__imagen {
     border-radius: 20px;
     width: 250px;
@@ -484,8 +488,8 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 270px 450px 270px 320px;
-    justify-items: center;
-    font-size: 16px; }
+    font-size: 16px;
+    padding-left: 30px; }
   .ProductosVegetarianos__imagen {
     border-radius: 20px;
     width: 250px;
@@ -499,8 +503,8 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 550px;
-    justify-items: center;
-    font-size: 16px; }
+    font-size: 16px;
+    padding-left: 30px; }
   .ProductosVeganos__imagen {
     border-radius: 20px;
     width: 250px;
@@ -541,7 +545,7 @@ a {
   .subtitulo {
     font-size: 20px; }
   .Footer__titulo {
-    font-size: 14px; }
+    font-size: 12px; }
   .carousel {
     margin-left: 90px;
     width: 300px;
@@ -550,7 +554,7 @@ a {
   .carousel-control-next, .carousel-control-prev {
     margin-top: 70px; }
   .navbar {
-    height: 240px;
+    height: 250px;
     font-size: 12px; }
   .SobreNosotros {
     display: grid;
@@ -576,9 +580,9 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 450px 700px 280px 250px 320px;
-    justify-items: center;
     grid-row-gap: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    padding-left: 10px; }
   .ProductosVariedades__imagen {
     border-radius: 20px;
     width: 200px;
@@ -592,8 +596,8 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 250px 420px 250px 300px;
-    justify-items: center;
-    font-size: 14px; }
+    font-size: 14px;
+    padding-left: 10px; }
   .ProductosVegetarianos__imagen {
     border-radius: 20px;
     width: 200px;
@@ -607,8 +611,8 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 550px;
-    justify-items: center;
-    font-size: 14px; }
+    font-size: 14px;
+    padding-left: 10px; }
   .ProductosVeganos__imagen {
     border-radius: 20px;
     width: 200px;
@@ -641,15 +645,15 @@ a {
     font-size: 8px;
     width: 65px; }
   .Combos__imagen {
-    width: 120px;
-    height: 120px; }
+    width: 100px;
+    height: 100px; }
   .Footer__imagen {
-    width: 50px;
-    height: 50px; }
+    width: 35px;
+    height: 35px; }
   .Footer__imagen:hover {
     transition: 1s;
-    width: 70px;
-    height: 70px; }
+    width: 45px;
+    height: 45px; }
   .carousel {
     margin-left: 60px;
     width: 200px;
@@ -686,15 +690,14 @@ a {
     font-size: 20px; }
   .Carrito__button {
     height: 25px;
-    width: 100px;
+    width: 200px;
     border-radius: 10px;
     margin-top: 10px;
-    font-size: 10px; }
+    font-size: 14px; }
   .ProductosVariedades {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 450px 700px 280px 250px 300px;
-    justify-items: center;
     grid-row-gap: 10px;
     font-size: 12px; }
   .ProductosVariedades__imagen {
@@ -710,7 +713,6 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 250px 420px 250px 300px;
-    justify-items: center;
     font-size: 12px; }
   .ProductosVegetarianos__imagen {
     border-radius: 20px;
