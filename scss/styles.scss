@@ -10,17 +10,23 @@ $TamañoFuente: 24px;
     background-image: linear-gradient(to top, $negro, #000000d7);
     color: #009d7c;
 }
-/* cambia el color del fondo y la posicion del footer */
+/* cambia el color del fondo, el tamaño y la posicion del footer */
 .Footer{
     background-color: #009d7c;
     margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
     padding-bottom: 25px;
     padding-top: 25px;
     color: black;
+}
+/* cambia la direccion del contenido del footer */
+.Footer__contenido{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.Footer__derechos{
+    display: flex;
+    justify-content: center;
 }
 /* cambia el tamaño del titulo del footer */
 .Footer__titulo{
@@ -212,7 +218,7 @@ $TamañoFuente: 24px;
 .SobreNosotros{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 150px 200px;
 }
 /* cambia el color y la posicion de la tabla */
 .SobreNosotros__tabla{
@@ -239,7 +245,7 @@ $TamañoFuente: 24px;
     grid-template-columns: 30% 30%;
     grid-template-rows: 100px 100px 200px 50px;
 }
-/* le cambia el tamaño al cuadro de texto */
+/* le cambia el tamaño a los cuadros de texto */
 .Formulario__CuadroDeTexto{
     width: 200px;
     height: 2fr;
@@ -247,11 +253,16 @@ $TamañoFuente: 24px;
 /* le cambia el tamaño al cuadro de texto del comentario */
 .Formulario__CuadroDeTexto--comentario{
     width: 300px;
-    height: 10rem;
+    height: 8rem;
 }
 /* le cambia el tamaño y el color a la letra del formulario */
 .Formulario__fuente{
     font-size: ($TamañoFuente/2)+6;
+    color: #009d7c;
+}
+/* le cambia el tamaño y el color a la letra del formulario */
+.Formulario__fuente--sexo{
+    font-size: ($TamañoFuente/2)+2;
     color: #009d7c;
 }
 /* le cambia el tamaño y el color a la letra del comentario*/
@@ -308,7 +319,7 @@ a{
 .carousel {
     width: 600px;
     height: 500px;
-    margin-left: 370px;
+    margin-left: 385px;
     margin-bottom: 300px;
   }
   .carousel-control-next, .carousel-control-prev {
@@ -320,8 +331,8 @@ a{
     justify-content: space-evenly;
 }
 .navbar__image{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 /* adapta los elementos de la pagina web a la resolucion de 1200px */
 @media only screen and (max-width: 1200px)
@@ -371,7 +382,7 @@ a{
     }
     .SobreNosotros{
         display: grid;
-        grid-template-rows: 100px 350px;
+        grid-template-rows: 150px 400px;
         font-size: ($TamañoFuente*2)-18;
     }
     .comentario{
@@ -382,6 +393,7 @@ a{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100px 100px 300px 50px;
+        padding-left: 35px;
     }
     .Formulario__CuadroDeTexto{
     width: 550px;
@@ -392,8 +404,10 @@ a{
         height: 13rem;
     }
     .Formulario__fuente{
+        font-size: ($TamañoFuente/2)+12;
+    }
+    .Formulario__fuente--sexo{
         font-size: ($TamañoFuente/2)+8;
-        color: $verde;
     }
     .Carrito{
         font-size: $TamañoFuente;
@@ -407,8 +421,8 @@ a{
     }
     .ProductosVariedades{
         display: grid;
-        grid-template-rows: 550px 770px 400px 380px 420px;
-        font-size: ($TamañoFuente/2)+8;
+        grid-template-rows: 550px 830px 400px 380px 420px;
+        font-size: ($TamañoFuente/2)+10;
         padding-left: 150px;
     }
     .ProductosVariedades__imagen{
@@ -423,7 +437,7 @@ a{
     .ProductosVegetarianos{
         display: grid;
         grid-template-rows: 400px 500px 380px 370px;
-        font-size: ($TamañoFuente/2)+8;
+        font-size: ($TamañoFuente/2)+10;
         padding-left: 150px;
     }
     .ProductosVegetarianos__imagen{
@@ -437,8 +451,8 @@ a{
     }
     .ProductosVeganos{
         display: grid;
-        grid-template-rows: 600px;
-        font-size: ($TamañoFuente/2)+8;
+        grid-template-rows: 670px;
+        font-size: ($TamañoFuente/2)+10;
         padding-left: 150px;
     }
     .ProductosVeganos__imagen{
@@ -479,6 +493,17 @@ a{
         justify-items: center;
         font-size: ($TamañoFuente/2)+6;
     }
+    .Carrito__titulo{
+        font-size: ($TamañoFuente/2)+8;
+    }
+    .Carrito__fuente{
+        font-size: ($TamañoFuente/2)+6;
+    }
+    .Carrito__button{
+        height: 35px;
+        width: 200px;
+        font-size: ($TamañoFuente/2)+4;
+    }
     .Footer{
         width: 100%;
         font-size: ($TamañoFuente/2)+4;
@@ -493,7 +518,7 @@ a{
         font-size: ($TamañoFuente/2)+8;
     }
     .carousel{
-        margin-left: 125px;
+        margin-left: 130px;
         width: 350px;
         height: 350px;
         margin-bottom: 150px;
@@ -502,12 +527,13 @@ a{
         margin-top: 90px;
     }
     .navbar{
-        height: 250px;
+        height: 270px;
         font-size: ($TamañoFuente/2)+2;
     }
     .SobreNosotros{
         display: grid;
         grid-template-rows: 70px 200px;
+        font-size: ($TamañoFuente/2)+4;
     }
     .comentario{
         font-size: ($TamañoFuente/2)+4;
@@ -517,6 +543,7 @@ a{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100px 100px 200px 50px;
+        padding-left: 35px;
     }
     .Formulario__CuadroDeTexto{
     width: 250px;
@@ -524,11 +551,10 @@ a{
     }
     .Formulario__CuadroDeTexto--comentario{
         width: 250px;
-        height: 10rem;
+        height: 8rem;
     }
     .Formulario__fuente{
         font-size: ($TamañoFuente/2)+4;
-        color: $verde;
     }
     .ProductosVariedades{
         display: grid;
@@ -602,6 +628,17 @@ a{
         width: ($anchoImagen/6);
         height: ($altoImagen/6);
     }
+    .Carrito__titulo{
+        font-size: ($TamañoFuente/2)+4;
+    }
+    .Carrito__fuente{
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .Carrito__button{
+        height: 35px;
+        width: 200px;
+        font-size: ($TamañoFuente/2)+4;
+    }
     .Combos__button{
         font-size: $TamañoFuente/2;
         width: 120px;
@@ -628,7 +665,7 @@ a{
         font-size: $TamañoFuente/2;
     }
     .carousel{
-        margin-left: 90px;
+        margin-left: 92px;
         width: 300px;
         height: 300px;
         margin-bottom: 150px;
@@ -637,7 +674,7 @@ a{
         margin-top: 70px;
     }
     .navbar{
-        height: 250px;
+        height: 260px;
         font-size: $TamañoFuente/2;
     }
     .SobreNosotros{
@@ -653,6 +690,7 @@ a{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100px 100px 200px 50px;
+        padding-left: 25px;
     }
     .Formulario__CuadroDeTexto{
     width: 200px;
@@ -660,11 +698,10 @@ a{
     }
     .Formulario__CuadroDeTexto--comentario{
         width: 200px;
-        height: 10rem;
+        height: 8rem;
     }
     .Formulario__fuente{
         font-size: ($TamañoFuente/2)+2;
-        color: $verde;
     }
     .ProductosVariedades{
         display: grid;
@@ -719,7 +756,6 @@ a{
         height: 30px;
         width: 150px;
         border-radius: 10px;
-        border-color: $verde;
         margin-top: 10px;
     }
 }
@@ -764,7 +800,7 @@ a{
         height: ($altoImagen/6)-55;
     }
     .carousel{
-        margin-left: 60px;
+        margin-left: 62px;
         width: 200px;
         height: 200px;
         margin-bottom: 100px;
@@ -773,7 +809,7 @@ a{
         margin-top: 50px;
     }
     .navbar{
-        height: 225px;
+        height: 240px;
         font-size: ($TamañoFuente/2)-2;
     }
     .lead{
@@ -794,19 +830,21 @@ a{
         grid-template-rows: 100px 100px 200px 50px;
     }
     .Formulario__CuadroDeTexto{
-    width: 150px;
-    height: 2rem;
+        width: 150px;
+        height: 2rem;
     }
     .Formulario__CuadroDeTexto--comentario{
         width: 150px;
-        height: 10rem;
+        height: 8rem;
     }
     .Formulario__fuente{
-        font-size: ($TamañoFuente/2)-2;
-        color: $verde;
+        font-size: ($TamañoFuente/2)+2;
+    }
+    .Formulario__fuente--sexo{
+        font-size: $TamañoFuente/2;
     }
     .Carrito__titulo{
-        font-size: ($TamañoFuente/2)+8;
+        font-size: ($TamañoFuente/2)+4;
     }
     .Carrito__button{
         height: 25px;
@@ -814,6 +852,9 @@ a{
         border-radius: 10px;
         margin-top: 10px;
         font-size: ($TamañoFuente/2)+2;
+    }
+    .Carrito__fuente{
+        font-size: $TamañoFuente/2;
     }
     .ProductosVariedades{
         display: grid;

@@ -5,17 +5,23 @@
   background-image: linear-gradient(to top, #000000, #000000d7);
   color: #009d7c; }
 
-/* cambia el color del fondo y la posicion del footer */
+/* cambia el color del fondo, el tamaño y la posicion del footer */
 .Footer {
   background-color: #009d7c;
   margin-top: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding-bottom: 25px;
   padding-top: 25px;
   color: black; }
+
+/* cambia la direccion del contenido del footer */
+.Footer__contenido {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row; }
+
+.Footer__derechos {
+  display: flex;
+  justify-content: center; }
 
 /* cambia el tamaño del titulo del footer */
 .Footer__titulo {
@@ -204,7 +210,7 @@
 .SobreNosotros {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 200px 200px; }
+  grid-template-rows: 150px 200px; }
 
 /* cambia el color y la posicion de la tabla */
 .SobreNosotros__tabla {
@@ -231,7 +237,7 @@
   grid-template-columns: 30% 30%;
   grid-template-rows: 100px 100px 200px 50px; }
 
-/* le cambia el tamaño al cuadro de texto */
+/* le cambia el tamaño a los cuadros de texto */
 .Formulario__CuadroDeTexto {
   width: 200px;
   height: 2fr; }
@@ -239,11 +245,16 @@
 /* le cambia el tamaño al cuadro de texto del comentario */
 .Formulario__CuadroDeTexto--comentario {
   width: 300px;
-  height: 10rem; }
+  height: 8rem; }
 
 /* le cambia el tamaño y el color a la letra del formulario */
 .Formulario__fuente {
   font-size: 18px;
+  color: #009d7c; }
+
+/* le cambia el tamaño y el color a la letra del formulario */
+.Formulario__fuente--sexo {
+  font-size: 14px;
   color: #009d7c; }
 
 /* le cambia el tamaño y el color a la letra del comentario*/
@@ -293,7 +304,7 @@ a {
 .carousel {
   width: 600px;
   height: 500px;
-  margin-left: 370px;
+  margin-left: 385px;
   margin-bottom: 300px; }
 
 .carousel-control-next, .carousel-control-prev {
@@ -305,8 +316,8 @@ a {
   justify-content: space-evenly; }
 
 .navbar__image {
-  width: 50px;
-  height: 50px; }
+  width: 60px;
+  height: 60px; }
 
 /* adapta los elementos de la pagina web a la resolucion de 1200px */
 @media only screen and (max-width: 1200px) {
@@ -345,7 +356,7 @@ a {
     margin-top: 200px; }
   .SobreNosotros {
     display: grid;
-    grid-template-rows: 100px 350px;
+    grid-template-rows: 150px 400px;
     font-size: 30px; }
   .comentario {
     font-size: 22px; }
@@ -353,7 +364,8 @@ a {
     justify-content: center;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px 300px 50px; }
+    grid-template-rows: 100px 100px 300px 50px;
+    padding-left: 35px; }
   .Formulario__CuadroDeTexto {
     width: 550px;
     height: 3rem; }
@@ -361,8 +373,9 @@ a {
     width: 550px;
     height: 13rem; }
   .Formulario__fuente {
-    font-size: 20px;
-    color: #008000; }
+    font-size: 24px; }
+  .Formulario__fuente--sexo {
+    font-size: 20px; }
   .Carrito {
     font-size: 24px; }
   .Carrito__button {
@@ -373,8 +386,8 @@ a {
     font-size: 18px; }
   .ProductosVariedades {
     display: grid;
-    grid-template-rows: 550px 770px 400px 380px 420px;
-    font-size: 20px;
+    grid-template-rows: 550px 830px 400px 380px 420px;
+    font-size: 22px;
     padding-left: 150px; }
   .ProductosVariedades__imagen {
     width: 350px;
@@ -386,7 +399,7 @@ a {
   .ProductosVegetarianos {
     display: grid;
     grid-template-rows: 400px 500px 380px 370px;
-    font-size: 20px;
+    font-size: 22px;
     padding-left: 150px; }
   .ProductosVegetarianos__imagen {
     width: 350px;
@@ -397,8 +410,8 @@ a {
     margin-top: 20px; }
   .ProductosVeganos {
     display: grid;
-    grid-template-rows: 600px;
-    font-size: 20px;
+    grid-template-rows: 670px;
+    font-size: 22px;
     padding-left: 150px; }
   .ProductosVeganos__imagen {
     width: 350px;
@@ -430,6 +443,14 @@ a {
     align-items: center;
     justify-items: center;
     font-size: 18px; }
+  .Carrito__titulo {
+    font-size: 20px; }
+  .Carrito__fuente {
+    font-size: 18px; }
+  .Carrito__button {
+    height: 35px;
+    width: 200px;
+    font-size: 16px; }
   .Footer {
     width: 100%;
     font-size: 16px; }
@@ -440,34 +461,35 @@ a {
   .Footer__titulo {
     font-size: 20px; }
   .carousel {
-    margin-left: 125px;
+    margin-left: 130px;
     width: 350px;
     height: 350px;
     margin-bottom: 150px; }
   .carousel-control-next, .carousel-control-prev {
     margin-top: 90px; }
   .navbar {
-    height: 250px;
+    height: 270px;
     font-size: 14px; }
   .SobreNosotros {
     display: grid;
-    grid-template-rows: 70px 200px; }
+    grid-template-rows: 70px 200px;
+    font-size: 16px; }
   .comentario {
     font-size: 16px; }
   .Formulario {
     justify-content: center;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px 200px 50px; }
+    grid-template-rows: 100px 100px 200px 50px;
+    padding-left: 35px; }
   .Formulario__CuadroDeTexto {
     width: 250px;
     height: 2rem; }
   .Formulario__CuadroDeTexto--comentario {
     width: 250px;
-    height: 10rem; }
+    height: 8rem; }
   .Formulario__fuente {
-    font-size: 16px;
-    color: #008000; }
+    font-size: 16px; }
   .ProductosVariedades {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -527,6 +549,14 @@ a {
     transition: 1s;
     width: 100px;
     height: 100px; }
+  .Carrito__titulo {
+    font-size: 16px; }
+  .Carrito__fuente {
+    font-size: 14px; }
+  .Carrito__button {
+    height: 35px;
+    width: 200px;
+    font-size: 16px; }
   .Combos__button {
     font-size: 12px;
     width: 120px;
@@ -547,14 +577,14 @@ a {
   .Footer__titulo {
     font-size: 12px; }
   .carousel {
-    margin-left: 90px;
+    margin-left: 92px;
     width: 300px;
     height: 300px;
     margin-bottom: 150px; }
   .carousel-control-next, .carousel-control-prev {
     margin-top: 70px; }
   .navbar {
-    height: 250px;
+    height: 260px;
     font-size: 12px; }
   .SobreNosotros {
     display: grid;
@@ -566,16 +596,16 @@ a {
     justify-content: center;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 100px 200px 50px; }
+    grid-template-rows: 100px 100px 200px 50px;
+    padding-left: 25px; }
   .Formulario__CuadroDeTexto {
     width: 200px;
     height: 2rem; }
   .Formulario__CuadroDeTexto--comentario {
     width: 200px;
-    height: 10rem; }
+    height: 8rem; }
   .Formulario__fuente {
-    font-size: 14px;
-    color: #008000; }
+    font-size: 14px; }
   .ProductosVariedades {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -621,7 +651,6 @@ a {
     height: 30px;
     width: 150px;
     border-radius: 10px;
-    border-color: #008000;
     margin-top: 10px; } }
 
 /* adapta los elementos de la pagina web a la resolucion de 320px */
@@ -655,14 +684,14 @@ a {
     width: 45px;
     height: 45px; }
   .carousel {
-    margin-left: 60px;
+    margin-left: 62px;
     width: 200px;
     height: 200px;
     margin-bottom: 100px; }
   .carousel-control-next, .carousel-control-prev {
     margin-top: 50px; }
   .navbar {
-    height: 225px;
+    height: 240px;
     font-size: 10px; }
   .lead {
     font-size: 16px !important; }
@@ -682,18 +711,21 @@ a {
     height: 2rem; }
   .Formulario__CuadroDeTexto--comentario {
     width: 150px;
-    height: 10rem; }
+    height: 8rem; }
   .Formulario__fuente {
-    font-size: 10px;
-    color: #008000; }
+    font-size: 14px; }
+  .Formulario__fuente--sexo {
+    font-size: 12px; }
   .Carrito__titulo {
-    font-size: 20px; }
+    font-size: 16px; }
   .Carrito__button {
     height: 25px;
     width: 200px;
     border-radius: 10px;
     margin-top: 10px;
     font-size: 14px; }
+  .Carrito__fuente {
+    font-size: 12px; }
   .ProductosVariedades {
     display: grid;
     grid-template-columns: 50% 50%;
