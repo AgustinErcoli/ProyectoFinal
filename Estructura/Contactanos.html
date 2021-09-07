@@ -59,23 +59,28 @@
     </div>
     <!--Aca va un formulario para hacer alguna consulta sobre el emprendimiento-->
     <form class="Formulario">
+      <!--Cuadro de texto para el nombre-->
         <div class="mb-3">
             <p><label for="nombre" class="Formulario__fuente">Nombre</label></p>
             <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="Formulario__CuadroDeTexto">
         </div>
+        <!--Cuadro de texto para el apellido-->
         <div class="mb-3">
             <p><label for="apellido" class="Formulario__fuente">Apellido</label></p>
             <input type="text" name="apellido" placeholder="Ingresa tu apellido" class="Formulario__CuadroDeTexto">
         </div>
+        <!--Cuadro de texto para la direccion de correo-->
         <div class="mb-3">
           <p><label for="exampleInputEmail1" class="Formulario__fuente">Direccion de correo</label></p>
           <input type="email" id="exampleInputEmail1" placeholder="ingresa tu correo" class="Formulario__CuadroDeTexto">
         </div>
+        <!--Cuadro de texto para la contraseña-->
         </div>
         <div class="mb-3">
           <p><label for="exampleInputPassword1" class="Formulario__fuente">Contraseña</label></p>
           <input type="password" id="exampleInputPassword1" placeholder="ingresa tu contraseña" class="Formulario__CuadroDeTexto">
         </div>
+        <!--Seccion para elegir el sexo-->
         <div class="mb-3">
           <p class="Formulario__fuente">Sexo</p>
           <label for="hombre" class="Formulario__fuente--sexo">Hombre</label>
@@ -83,13 +88,16 @@
           <label for="mujer" class="Formulario__fuente--sexo">Mujer</label>
           <input type="radio" name="genero" value="mujer" id="mujer">
         </div>
+        <!--Cuadro de texto para el comentario-->
         <div class="mb-3">
             <p><label for="comentario" class="Formulario__fuente">Comentario</label></p>
             <textarea name="comentario" placeholder="ingresa tu comentario" class="Formulario__CuadroDeTexto--comentario"></textarea>
         </div>
+        <!--Boton de enviar-->
         <div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
+        <!--Boton de borrar-->
         <div>
             <button type="reset" class="btn btn-primary">Borrar</button>
         </div>
@@ -127,6 +135,7 @@
       <!--aca van los derechos de autor-->
       <p class="Footer__derechos">© 2021 Capueat, todos los derechos reservados.</p>
     </footer>
+  <!--Enlace a JavaScript-->  
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
