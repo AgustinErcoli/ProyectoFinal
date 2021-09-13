@@ -80,6 +80,7 @@ $TamañoFuente: 24px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 500px 500px 400px 400px 400px;
     justify-items: start;
+    row-gap: 15px;
     padding-left: 250px;
     grid-row-gap: 10px;
 }
@@ -113,6 +114,7 @@ $TamañoFuente: 24px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 400px 400px 400px 400px;
     justify-items: start;
+    row-gap: 15px;
     padding-left: 250px;
 }
 /* cambia el tamaño y la forma de las imagenes */
@@ -145,6 +147,7 @@ $TamañoFuente: 24px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 500px;
     justify-items: start;
+    row-gap: 15px;
     padding-left: 250px;
 }
 /* cambia el tamaño y la forma de las imagenes */
@@ -368,10 +371,6 @@ a{
         width: 250px;
         height: 40px;
     }
-    .navbar{
-        height: 75px;
-        font-size: ($TamañoFuente/2)+8;
-    }
     .carousel{
         margin-left: 310px;
         width: 600px;
@@ -527,10 +526,6 @@ a{
         .carousel-control-next, .carousel-control-prev{
         margin-top: 90px;
     }
-    .navbar{
-        height: 270px;
-        font-size: ($TamañoFuente/2)+2;
-    }
     .SobreNosotros{
         display: grid;
         grid-template-rows: 70px 200px;
@@ -674,10 +669,6 @@ a{
         .carousel-control-next, .carousel-control-prev{
         margin-top: 70px;
     }
-    .navbar{
-        height: 260px;
-        font-size: $TamañoFuente/2;
-    }
     .SobreNosotros{
         display: grid;
         grid-template-rows: 70px 200px;
@@ -809,10 +800,6 @@ a{
         .carousel-control-next, .carousel-control-prev{
         margin-top: 50px;
     }
-    .navbar{
-        height: 240px;
-        font-size: ($TamañoFuente/2)-2;
-    }
     .lead{
         font-size: ($TamañoFuente/2)+4!important;
     }
@@ -822,7 +809,7 @@ a{
     .SobreNosotros{
         font-size: $TamañoFuente/2;
         display: grid;
-        grid-template-rows: 50px 200px;
+        grid-template-rows: 75px 250px;
     }
     .Formulario{
         justify-content: center;
@@ -897,7 +884,6 @@ a{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 550px;
-        justify-items: center;
         font-size: $TamañoFuente/2;
     }
     .ProductosVeganos__imagen{

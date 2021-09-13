@@ -75,6 +75,7 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 500px 500px 400px 400px 400px;
   justify-items: start;
+  row-gap: 15px;
   padding-left: 250px;
   grid-row-gap: 10px; }
 
@@ -108,6 +109,7 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 400px 400px 400px 400px;
   justify-items: start;
+  row-gap: 15px;
   padding-left: 250px; }
 
 /* cambia el tamaño y la forma de las imagenes */
@@ -140,6 +142,7 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 500px;
   justify-items: start;
+  row-gap: 15px;
   padding-left: 250px; }
 
 /* cambia el tamaño y la forma de las imagenes */
@@ -345,9 +348,6 @@ a {
   .Combos__button {
     width: 250px;
     height: 40px; }
-  .navbar {
-    height: 75px;
-    font-size: 20px; }
   .carousel {
     margin-left: 310px;
     width: 600px;
@@ -468,9 +468,6 @@ a {
     margin-bottom: 150px; }
   .carousel-control-next, .carousel-control-prev {
     margin-top: 90px; }
-  .navbar {
-    height: 270px;
-    font-size: 14px; }
   .SobreNosotros {
     display: grid;
     grid-template-rows: 70px 200px;
@@ -584,9 +581,6 @@ a {
     margin-bottom: 150px; }
   .carousel-control-next, .carousel-control-prev {
     margin-top: 70px; }
-  .navbar {
-    height: 260px;
-    font-size: 12px; }
   .SobreNosotros {
     display: grid;
     grid-template-rows: 70px 200px;
@@ -691,9 +685,6 @@ a {
     margin-bottom: 100px; }
   .carousel-control-next, .carousel-control-prev {
     margin-top: 50px; }
-  .navbar {
-    height: 240px;
-    font-size: 10px; }
   .lead {
     font-size: 16px !important; }
   .comentario {
@@ -701,7 +692,7 @@ a {
   .SobreNosotros {
     font-size: 12px;
     display: grid;
-    grid-template-rows: 50px 200px; }
+    grid-template-rows: 75px 250px; }
   .Formulario {
     justify-content: center;
     display: grid;
@@ -761,7 +752,6 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 550px;
-    justify-items: center;
     font-size: 12px; }
   .ProductosVeganos__imagen {
     border-radius: 20px;
