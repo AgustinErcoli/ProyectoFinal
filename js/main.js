@@ -1,17 +1,25 @@
+let precioDelPedido = parseInt(prompt('Ingrese el valor del/los producto/s'));
+let propina = prompt('Indique el porcentaje de propina que quiera agregar');
 
-const TurnosDisponibles = 30;
-const Limite = 30;
-const TurnoNoDisponible = 13;
+const porcentajePropina = (a, b) => a * b;
 
-for (let i = 1; i <= TurnosDisponibles; i++) {
-
-    if (i >= Limite) {
-        break;
+const propinaIncluida = () => {
+    let salida;
+    if(propina == '10%' || propina == 10){
+        salida = parseFloat(1.10);
+    } else if(propina == '15%' || propina == 15){
+        salida = parseFloat(1.15);
+    } else if(propina == '20%' || propina == 20){
+        salida = parseFloat(1.20);
     }
-    else if (i === TurnoNoDisponible) {
-        continue;
-    }
-
-    let nombreCliente = prompt("Ingresa el nombre del cliente");
-    alert(`${nombreCliente} tiene el turno N° ${i} `)
+    return salida;
 }
+
+const calcularPropina = () => {
+
+    alert(`El valor total es ${parseInt(porcentajePropina(precioDelPedido, propinaIncluida()))}`);
+    console.log(porcentajePropina(precioDelPedido, propinaIncluida()));
+    
+}
+
+calcularPropina();
