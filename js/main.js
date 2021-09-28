@@ -1,25 +1,19 @@
-let precioDelPedido = parseInt(prompt('Ingrese el valor del/los producto/s'));
-let propina = prompt('Indique el porcentaje de propina que quiera agregar');
+let producto = prompt("Ingrese el producto");
+let precio = prompt("Ingrese el precio del producto");
+let cantidad = prompt("Ingrese la cantidad deseada");
 
-const porcentajePropina = (a, b) => a * b;
-
-const propinaIncluida = () => {
-    let salida;
-    if(propina == '10%' || propina == 10){
-        salida = parseFloat(1.10);
-    } else if(propina == '15%' || propina == 15){
-        salida = parseFloat(1.15);
-    } else if(propina == '20%' || propina == 20){
-        salida = parseFloat(1.20);
+class productos{
+    constructor(producto, precio, cantidad) {
+        this.nombre = producto;
+        this.precio = precio;
+        this.cantidad = cantidad;
     }
-    return salida;
+    guardar(){
+    console.log("El producto es: " + this.nombre); 
+    console.log("El precio es: $" + this.precio);
+    console.log("La cantidad es: " + this.cantidad);
+    console.log("El total es: $" + (this.precio * this.cantidad)); 
+    }
 }
-
-const calcularPropina = () => {
-
-    alert(`El valor total es ${parseInt(porcentajePropina(precioDelPedido, propinaIncluida()))}`);
-    console.log(porcentajePropina(precioDelPedido, propinaIncluida()));
-    
-}
-
-calcularPropina();
+const producto1 = new productos(producto, precio, cantidad);
+producto1.guardar();
