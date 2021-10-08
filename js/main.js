@@ -29,3 +29,15 @@ activoCapueat1.push (new Capueat ("Rolls Veganos", "$430", 8, 1));
 activoCapueat1.push (new Capueat ("Rolls calientes vegetarianos", "$485", 8, 1));
 
 console.log(activoCapueat1);
+
+let card = document.getElementByClassName("card");
+console.log(card[0].innerHTML);
+console.log(card[1].innerHTML);
+
+let parrafo = document.createElement("p");
+parrafo.innerHTML = "<h1>Para conocer más sobre nosotros explora nuestro sitio web.</h1>";
+document.body.appendChild(parrafo);
+
+let parrafo = document.createElement("p");
+parrafo.innerHTML = "<h2>Capueat, el mejor sushi al alcance de tu mano</h2>";
+document.body.appendChild(parrafo);
