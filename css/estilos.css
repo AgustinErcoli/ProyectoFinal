@@ -43,6 +43,121 @@
   display: block;
   list-style: circle; }
 
+/* Contenido Producto en canasta */
+.combos__subtitulo {
+  font-weight: bold;
+  font-size: 15mm;
+  letter-spacing: 2.5mm;
+  word-spacing: 1.5mm;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5% 0 5% 0; }
+
+.container__favoritos-box {
+  margin-bottom: 100px; }
+
+.container__sushiImagen-img {
+  width: 100%;
+  height: 401px;
+  object-fit: cover;
+  object-position: 50% 50%; }
+
+.carritoContenedor {
+  display: flex;
+  position: relative;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  position: sticky; }
+
+.fa-shopping-cart::before {
+  content: "\f07a"; }
+
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; }
+
+.icon {
+  font-size: 25px; }
+
+.carritoContenedor_icono {
+  align-self: center; }
+
+.cantidadCarrito {
+  position: absolute;
+  width: auto;
+  height: auto;
+  border: solid black;
+  border-radius: 20px;
+  background-color: #faf7f2;
+  font-size: 15px;
+  padding: 5px; }
+
+.contenedorCartas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contenedorCartas__titulo {
+  height: 15%;
+  text-transform: uppercase; }
+
+.contenedorCartas__texto {
+  height: 20%;
+  text-transform: uppercase;
+  text-align: center; }
+
+.contenedorCartas__precio {
+  height: 10%;
+  text-align: center; }
+
+.contenedorCartas__enlace {
+  border: solid #009d7c 5px;
+  width: auto;
+  margin: 0;
+  margin-left: 0;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #009d7c; }
+
+.producto-canasta {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative; }
+
+.producto-canasta img {
+  width: 150px;
+  height: 130px;
+  padding-bottom: 15px; }
+
+.descripcion-producto {
+  text-align: left;
+  padding: 20px; }
+
+.boton-eliminar {
+  cursor: pointer;
+  background-color: #009d7c;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: none;
+  border: none; }
+
 /* organiza la seccion de carrito en columnas y lineas */
 .Carrito {
   display: grid;
@@ -158,50 +273,6 @@
 
 /* cambia el tamaño y el color de los botones */
 .ProductosVeganos__button {
-  height: 30px;
-  width: 150px;
-  border-radius: 10px;
-  background-color: #009d7c;
-  border-color: #003e80;
-  margin-top: 10px; }
-
-/* organiza la seccion de combos en columnas y lineas */
-.Combos {
-  display: grid;
-  grid-template-areas: "Clasico salmón" "premium veggie" "vegan vegan";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 510px 510px 510px;
-  align-items: center;
-  justify-items: center; }
-
-/* le asigna un id a Clasico */
-#clasico {
-  grid-area: Clasico; }
-
-/* le asigna un id a Salmon */
-#salmon {
-  grid-area: salmón; }
-
-/* le asigna un id a Premium */
-#premium {
-  grid-area: premium; }
-
-/* le asigna un id a Veggie */
-#veggie {
-  grid-area: veggie; }
-
-/* le asigna un id a Vegan */
-#vegan {
-  grid-area: vegan; }
-
-/* Cambia el tamaño y la forma de las fotos */
-.Combos__imagen {
-  border-radius: 20px;
-  width: 300px;
-  height: 300px; }
-
-/* cambia el tamaño y el color de los botones */
-.Combos__button {
   height: 30px;
   width: 150px;
   border-radius: 10px;

@@ -51,7 +51,6 @@
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
               </div>
-            </div>
           </nav>
     </header>
     <h1 class="titulo">Menú</h1>
@@ -78,46 +77,21 @@
       </button>
     </div>
     <!--En este apartado van todos los combos-->
-    <div>
-        <p class="subtitulo"><strong>Combos</strong></p>
-        <div class="Combos">
-            <div id="Clasico">
-                <p class="lead"><strong>Clásico:</strong></p>
-                <p class="fuente">12 piezas $590</p>
-                <p class="fuente">24 piezas $1150</p>
-                <img src="imagenes/rollsClasicos.png" alt="Imagen de rolls clasicos" alt="Imagen de combo 1" class="Combos__imagen">
-                <p><button class="Combos__button">Agregar al carrito</button></p>
-            </div>
-            <div id="salmón">
-                <p class="lead"><strong>Salmón:</strong></p>
-                <p class="fuente">12 piezas $600</p>
-                <p class="fuente">24 piezas $1200</p>
-                <img src="imagenes/comboSalmon.png" alt="Imagen de combo salmon" class="Combos__imagen">
-                <p><button class="Combos__button">Agregar al carrito</button></p>
-            </div>
-            <div id="premium">
-                <p class="lead"><strong>Premium:</strong></p>
-                <p class="fuente">12 piezas $750</p>
-                <p class="fuente">24 piezas $1500</p>
-                <img src="imagenes/comboPremium.png" alt="Imagen de combo premium" class="Combos__imagen">
-                <p><button class="Combos__button">Agregar al carrito</button></p>
-            </div>
-            <div id="veggie">
-                <p class="lead"><strong>Veggie:</strong></p>
-                <p class="fuente">12 piezas $570</p>
-                <p class="fuente">24 piezas $1100</p>
-                <img src="imagenes/veggies.jpg" class="Combos__imagen">
-                <p><button class="Combos__button">Agregar al carrito</button></p>
-            </div>
-            <div id="vegan">
-                <p class="lead"><strong>Vegan:</strong></p>
-                <p class="fuente">24 piezas $600</p>
-                <p class="fuente">24 piezas $1200</p>
-                <img src="imagenes/rollsVeganos.png" alt="Imagen de combo vegan" class="Combos__imagen">
-                <p><button class="Combos__button">Agregar al carrito</button></p>
-            </div>
+    <section>
+      <h2 class="combos__subtitulo">Combos</h2>
+
+      <div class="container__favoritos" id="listado">
+      </div>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Canasta</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </div>
+        <div class="offcanvas-body">
+          <div id="canasta"></div>
+        </div>
+      </div>
     <!--aca esta el footer-->
     <footer class="Footer">
       <!--logo del emprendimiento-->
