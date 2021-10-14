@@ -6030,6 +6030,8 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
+  background-color: #009d7c;
+  color: black;
 }
 .offcanvas-header .btn-close {
   padding: 0.5rem 0.5rem;
@@ -6047,6 +6049,7 @@ textarea.form-control-lg {
   flex-grow: 1;
   padding: 1rem 1rem;
   overflow-y: auto;
+  background-color: black;
 }
 
 .offcanvas-start {
@@ -6204,6 +6207,8 @@ textarea.form-control-lg {
   position: sticky;
   top: 0;
   z-index: 1020;
+  padding-left: 1240px;
+  padding-top: 30px;
 }
 
 @media (min-width: 576px) {

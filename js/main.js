@@ -50,7 +50,6 @@ class Carrito {
     
     agregarAlCarrito(){
         this.cantidad ++;
-        //this.precio += precio;
     }
     quitarDelCarrito(cantidad){
         this.cantidad -= cantidad;
