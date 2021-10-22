@@ -44,7 +44,11 @@
   list-style: circle; }
 
 /* Contenido Producto en canasta */
-.combos__subtitulo {
+.container__favoritos-sushiImagen .container__sushiImagen-img {
+  width: 100%;
+  height: 400px; }
+
+.sectionFavoritos .combos__subtitulo {
   font-weight: bold;
   font-size: 15mm;
   letter-spacing: 2.5mm;
@@ -53,39 +57,147 @@
   text-align: center;
   margin: 5% 0 5% 0; }
 
-.container__favoritos-box {
+.sectionFavoritos .container__favoritos .container__favoritos-box {
   margin-bottom: 100px; }
 
-.container__sushiImagen-img {
+.lineaDivisoria {
+  border-top: 5px solid black;
+  height: 15px;
   width: 100%;
-  height: 401px;
-  object-fit: cover;
-  object-position: 50% 50%; }
+  padding: 0; }
+
+.offcanvas__carrito .offcanvas__carrito-body .carrito__subtitulos {
+  display: flex;
+  justify-content: space-between; }
+
+.offcanvas__carrito-productos .producto-canasta {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: solid #fcedd4;
+  background-color: rgba(241, 241, 241, 0.322); }
+  .offcanvas__carrito-productos .producto-canasta img {
+    width: 100px;
+    height: 100%;
+    align-self: flex-start; }
+
+.contenedorCartas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .contenedorCartas .contenedorCartas__titulo {
+    height: 15%;
+    text-transform: uppercase; }
+  .contenedorCartas .contenedorCartas__texto {
+    height: 20%;
+    text-transform: uppercase;
+    text-align: center; }
+  .contenedorCartas .contenedorCartas__precio {
+    height: 10%;
+    text-align: center; }
+  .contenedorCartas .contenedorCartas__enlace {
+    border: solid black 5px;
+    width: auto;
+    margin: 0;
+    margin-left: 0;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: black;
+    background-color: #009d7c; }
+
+.contenedor__general-producto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; }
+  .contenedor__general-producto .contenedor__producto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; }
+    .contenedor__general-producto .contenedor__producto .descripcion-producto {
+      text-align: left;
+      padding: 0px;
+      margin-top: 0px; }
+      .contenedor__general-producto .contenedor__producto .descripcion-producto .producto-canastaDescripcion {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+        margin-top: 0; }
+
+.contenedor__cantidad {
+  display: flex;
+  flex-direction: row; }
+  .contenedor__cantidad a .contenedor__cantidad-icon {
+    font-size: 25px; }
+  .contenedor__cantidad a .contenedor__cantidad-icon--red {
+    color: red; }
+  .contenedor__cantidad a .contenedor__cantidad-icon--green {
+    color: green; }
+  .contenedor__cantidad .contenedor__cantidad-numero {
+    width: 35px;
+    border: black 1px solid;
+    text-align: center; }
+
+.contenedor__eliminar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  .contenedor__eliminar .contenedor__eliminarCantidad {
+    margin-right: 10px; }
+  .contenedor__eliminar a .contenedor__eliminarProducto {
+    color: red;
+    font-size: 20px; }
+
+.offcanvas__iniciarCompra .totalCarrito .totalCarrito__contenedor {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  margin: 20px 0px 20px 0px; }
+  .offcanvas__iniciarCompra .totalCarrito .totalCarrito__contenedor b {
+    font-size: 25px; }
+
+.offcanvas__iniciarCompra .totalCarrito .totalCarrito__button {
+  width: 100%;
+  height: 50px;
+  background-color: #009d7c; }
+
+.contenedor__cantidad {
+  display: flex;
+  flex-direction: row; }
+  .contenedor__cantidad a .contenedor__cantidad-icon {
+    font-size: 25px; }
+  .contenedor__cantidad a .contenedor__cantidad-icon--red {
+    color: red; }
+  .contenedor__cantidad a .contenedor__cantidad-icon--green {
+    color: green; }
+  .contenedor__cantidad .contenedor__cantidad-numero {
+    width: 35px;
+    border: black 1px solid;
+    text-align: center; }
 
 .carritoContenedor {
   display: flex;
   position: relative;
   flex-direction: column-reverse;
-  align-items: flex-end;
-  position: sticky; }
-
-.fa-shopping-cart::before {
-  content: "\f07a"; }
-
-.fa, .fab, .fad, .fal, .far, .fas {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1; }
+  align-items: flex-end; }
 
 .icon {
   font-size: 25px; }
 
 .carritoContenedor_icono {
-  align-self: center; }
+  display: flex;
+  align-self: flex-end; }
 
 .cantidadCarrito {
   position: absolute;
@@ -97,66 +209,12 @@
   font-size: 15px;
   padding: 5px; }
 
-.contenedorCartas {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+.bordes2 {
+  width: 490px; }
 
-.contenedorCartas__titulo {
-  height: 15%;
-  text-transform: uppercase; }
-
-.contenedorCartas__texto {
-  height: 20%;
-  text-transform: uppercase;
-  text-align: center; }
-
-.contenedorCartas__precio {
-  height: 10%;
-  text-align: center; }
-
-.contenedorCartas__enlace {
-  border: solid #009d7c 5px;
-  width: auto;
-  margin: 0;
-  margin-left: 0;
-  padding: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #009d7c; }
-
-.producto-canasta {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative; }
-
-.producto-canasta img {
-  width: 150px;
-  height: 130px;
-  padding-bottom: 15px; }
-
-.descripcion-producto {
-  text-align: left;
-  padding: 20px; }
-
-.boton-eliminar {
-  cursor: pointer;
-  background-color: #009d7c;
-  padding: 5px;
-  border-radius: 5px;
-  color: black;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  box-shadow: none;
-  border: none; }
+.bordes {
+  border: solid black;
+  height: 75vh; }
 
 /* organiza la seccion de carrito en columnas y lineas */
 .Carrito {

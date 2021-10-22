@@ -89,21 +89,46 @@
       </button>
     </div>
     <!--En este apartado van todos los combos-->
-    <section>
+    <section class="sectionFavoritos">
       <h2 class="combos__subtitulo">Combos</h2>
 
       <div class="container__favoritos" id="listado">
       </div>
 
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas offcanvas-start offcanvas__carrito" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Canasta</h5>
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito de compras</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <hr/>
         <div class="offcanvas-body">
-          <div id="canasta"></div>
+        <div class="offcanvas-body offcanvas__carrito-body">
+          <div class="carrito__subtitulos">
+            <p class="carrito__subtitulos-producto">Producto</p>
+            <p class="carrito__subtitulos-producto">Precio</p>
+          </div>
+          <hr/>
+          <div id="canasta">
+          <div class="offcanvas__carrito-productos" id="canasta">
+          </div>
+          <div id="iniciarCompra">
+          <div class="offcanvas__iniciarCompra" id="iniciarCompra">
+            <div class="totalCarrito">
+              <div class="totalCarrito__contenedor">
+                <b>Total:</b>
+                <b id="sumaTotalCarrito">$ 0</b>
+              </div>
+              <button class="totalCarrito__button">Iniciar Compra</button>
+            </div>
+          </div>
         </div>
       </div>
+
+    </section>
+
+    <div class="lineaDivisoria"></div>
+  </main>
     <!--aca esta el footer-->
     <footer class="Footer">
       <!--logo del emprendimiento-->
@@ -138,6 +163,9 @@
       <p class="Footer__derechos">© 2021 Capueat, todos los derechos reservados.</p>
     </footer>
     <!--Enlace a JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/af1d59bc16.js" crossorigin="anonymous"></script>
