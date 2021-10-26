@@ -49,12 +49,6 @@ $TamañoFuente: 24px;
     list-style: circle;
 }
 /* Contenido Producto en canasta */
-.container__favoritos-sushiImagen{
-    .container__sushiImagen-img{
-        width: 100%;
-        height: 400px;
-    }
-}
 .sectionFavoritos{
     .combos__subtitulo{
         font-weight: bold;
@@ -68,196 +62,197 @@ $TamañoFuente: 24px;
     .container__favoritos{
         .container__favoritos-box{
             margin-bottom: 100px;
+            .container__favoritos-sushiDescripcion{
+                .contenedorCartas{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .contenedorCartas__titulo{
+                        height: 15%;
+                        text-transform: uppercase;
+                    }
+
+                    .contenedorCartas__texto{
+                        height: 20%;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                    .contenedorCartas__precio{
+                        height: 10%;
+                        text-align: center;
+                    }
+
+                    .contenedorCartas__enlace{
+                        border: solid #009d7c 5px;
+                        width: auto;
+                        margin: 0;
+                        margin-left: 0;
+                        padding: 10px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        text-align: center;
+                        background-color: transparent;
+                        box-sizing: border-box;
+                        color: #009d7c;
+                    }
+                }
+            }
+            .container__favoritos-sushiImagen{
+                .container__sushiImagen-img{
+                    width: 100%;
+                    height: 401px;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
             }
         }
     }
-    .lineaDivisoria{ 
-        border-top: 5px solid black;
-        height: 15px;
-        width: 100%;
-        padding: 0;
-}
-
-.offcanvas__carrito{
-    .offcanvas__carrito-body{
-        .carrito__subtitulos{
-            display: flex;
-            justify-content: space-between;
+    .offcanvas__carrito{
+        .offcanvas__carrito-body{
+            .carrito__subtitulos{
+                display: flex;
+                justify-content: space-between;
+            }
+            .offcanvas__carrito-productos{
+                .producto-canasta{
+                    display: flex;
+                    padding: 15px;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: flex-start;
+                    position: relative;
+                    margin-bottom: 20px;
+                    border-bottom: solid #fcedd4;
+                    background-color: rgba(241, 241, 241, 0.322);
+                    img{
+                        width: 100px;
+                        height: 100%;
+                        align-self: flex-start;
+                    }
+                    .contenedor__general-producto{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;
+                        .contenedor__producto{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 20px;
+                            .descripcion-producto{
+                                text-align: left;
+                                padding: 0px;
+                                margin-top: 0px;
+                                .producto-canastaDescripcion{
+                                    width: 100px;
+                                    height: auto;
+                                    margin-bottom: 10px;
+                                    margin-top: 0;
+                                }
+                            }
+                            .contenedor__cantidad{
+                                display: flex;
+                                flex-direction: row;
+                                a .contenedor__cantidad-icon{
+                                    font-size: 25px;
+                                }
+                                a .contenedor__cantidad-icon--red{
+                                    color: red;
+                                }
+                                a .contenedor__cantidad-icon--green{
+                                    color: green;
+                                }
+                                .contenedor__cantidad-numero{
+                                    width: 35px;
+                                    border: black 1px solid;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .contenedor__eliminar{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            .contenedor__eliminarCantidad{
+                                margin-right: 10px;
+                            }
+                            a .contenedor__eliminarProducto{
+                                color: red;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .offcanvas__iniciarCompra{
+                .totalCarrito{
+                    .totalCarrito__contenedor{
+                        display: flex;
+                        flex: row;
+                        justify-content: space-between;
+                        margin: 20px 0px 20px 0px;
+                        b{
+                            font-size: 25px;
+                        }
+                    }
+                    .totalCarrito__button{
+                        width: 100%;
+                        height: 50px;
+                        background-color: #faecd5;
+                    }
+                }
+            }
         }
     }
 }
-.offcanvas__carrito-productos{
-    .producto-canasta{
-        display: flex;
-        padding: 15px;
-        width: 100%;
-        align-items: center;
-        justify-content: flex-start;
-        position: relative;
-        margin-bottom: 20px;
-        border-bottom: solid #fcedd4;
-        background-color: rgba(241, 241, 241, 0.322);
-        img{
-            width: 100px;
-            height: 100%;
-            align-self: flex-start;
-        }
-    }
-}
 
-.contenedorCartas{
+.lineaDivisoria{ 
+    border-top: 5px solid black;
+    height: 15px;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
+}
 
-    .contenedorCartas__titulo{
-        height: 15%;
-        text-transform: uppercase;
-    }
+.boxDesafio{
+    border: solid black 5px;
+    margin: 8px;
+    margin-left: 0;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
 
-    .contenedorCartas__texto{
-        height: 20%;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    .contenedorCartas__precio{
-        height: 10%;
-        text-align: center;
-    }
-
-    .contenedorCartas__enlace{
-        border: solid black 5px;
-        width: auto;
-        margin: 0;
-        margin-left: 0;
-            padding: 10px;
-            text-decoration: none;
-            text-transform: uppercase;
-            text-align: center;
-            background-color: transparent;
-            box-sizing: border-box;
-            color: black;
-            background-color: #009d7c;
-        }
-    }
-.contenedor__general-producto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    .contenedor__producto{
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        .descripcion-producto{
-            text-align: left;
-            padding: 0px;
-            margin-top: 0px;
-            .producto-canastaDescripcion{
-                width: 100px;
-                height: auto;
-                margin-bottom: 10px;
-                margin-top: 0;
-            }
-        }
-    }
-}
-.contenedor__cantidad{
-    display: flex;
-    flex-direction: row;
-    a .contenedor__cantidad-icon{
-        font-size: 25px;
-    }
-    a .contenedor__cantidad-icon--red{
-        color: red;
-    }
-    a .contenedor__cantidad-icon--green{
-        color: green;
-    }
-    .contenedor__cantidad-numero{
-        width: 35px;
-        border: black 1px solid;
-        text-align: center;
-    }
-}
-.contenedor__eliminar{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    .contenedor__eliminarCantidad{
-        margin-right: 10px;
-    }
-    a .contenedor__eliminarProducto{
-        color: red;
-        font-size: 20px;
-    }
-}
-.offcanvas__iniciarCompra{
-    .totalCarrito{
-        .totalCarrito__contenedor{
-            display: flex;
-            flex: row;
-            justify-content: space-between;
-            margin: 20px 0px 20px 0px;
-            b{
-                font-size: 25px;
-            }
-        }
-        .totalCarrito__button{
-            width: 100%;
-            height: 50px;
-            background-color: #009d7c;
-        }
-    }
-}
-.contenedor__cantidad{
-    display: flex;
-    flex-direction: row;
-    a .contenedor__cantidad-icon{
-        font-size: 25px;
-    }
-    a .contenedor__cantidad-icon--red{
-        color: red;
-    }
-    a .contenedor__cantidad-icon--green{
-        color: green;
-    }
-    .contenedor__cantidad-numero{
-        width: 35px;
-        border: black 1px solid;
-        text-align: center;
-    }
-}
 .carritoContenedor{
-display: flex;
-position: relative;
-flex-direction: column-reverse;
-align-items: flex-end;
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+    align-items: flex-end;
 }
 
 .icon{
-font-size: 25px;
+    font-size: 25px;
 }
 
 .carritoContenedor_icono{
-    display: flex;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .cantidadCarrito{
 
-position: absolute;
-width: auto;
-height: auto;
-border: solid black;
-border-radius: 20px;
-background-color: #faf7f2;
-font-size: 15px;
-padding: 5px;
+    position: absolute;
+    width: auto;
+    height: auto;
+    border: solid black;
+    border-radius: 20px;
+    background-color: #faf7f2;
+    font-size: 15px;
+    padding: 5px;
 }
 
 .bordes2{

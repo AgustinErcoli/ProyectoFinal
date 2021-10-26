@@ -231,7 +231,7 @@ const insertarProductos = () => {
   if (producto.id % 2 == 1) {
     $('#listado').append(`
   <div class="row justify-content-center container__favoritos-box" id="${producto.id}">
-  <div class="col-12 col-md-6 container__favoritos-jabonesDescripcion">
+  <div class="col-12 col-md-6 container__favoritos-sushiDescripcion">
   <div class="contenedorCartas">
       <h2 class="contenedorCartas__titulo">${producto.nombre}</h2>
       <p class="contenedorCartas__texto"> ${producto.descripcion} </p>

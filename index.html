@@ -59,7 +59,7 @@
           <a class="navbar-brand col-6 textCenter" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" href="#canasta">
             <div class="carritoContenedor">
               <i class="carritoContenedor_icono icon fas fa-shopping-cart"></i>
-              <p class="cantidadCarrito" id="cantidadEnElCarrito"></p>
+              <p class="cantidadCarrito" id="cantidadEnElCarrito">0</p>
             </div>
           </a>
         </div>
@@ -95,24 +95,20 @@
       <div class="container__favoritos" id="listado">
       </div>
 
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas offcanvas-start offcanvas__carrito" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito de compras</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <hr/>
-        <div class="offcanvas-body">
         <div class="offcanvas-body offcanvas__carrito-body">
           <div class="carrito__subtitulos">
             <p class="carrito__subtitulos-producto">Producto</p>
             <p class="carrito__subtitulos-producto">Precio</p>
           </div>
           <hr/>
-          <div id="canasta">
           <div class="offcanvas__carrito-productos" id="canasta">
           </div>
-          <div id="iniciarCompra">
           <div class="offcanvas__iniciarCompra" id="iniciarCompra">
             <div class="totalCarrito">
               <div class="totalCarrito__contenedor">
@@ -128,7 +124,6 @@
     </section>
 
     <div class="lineaDivisoria"></div>
-  </main>
     <!--aca esta el footer-->
     <footer class="Footer">
       <!--logo del emprendimiento-->
