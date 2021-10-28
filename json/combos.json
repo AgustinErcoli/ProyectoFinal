@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "nombre": "Combo clasico",
+      "descripcion":"12 piezas de rolls clasicos", 
+      "imagen": "imagenes/rollsClasicos.png",
+      "precio": "590",
+      "cantidad": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Combo Premium",
+      "descripcion":"12 piezas de rolls especiales", 
+      "imagen": "imagenes/comboPremium.png",
+      "precio": "750",
+      "cantidad": 0
+    },
+    {
+      "id": 3,
+      "nombre": "Combo Veggie",
+      "descripcion":"12 piezas de rolls vegetarianos", 
+      "imagen": "imagenes/veggies.jpg",
+      "precio": "570",
+      "cantidad": 0
+    },
+    {
+      "id": 4,
+      "nombre": "Combo Vegan'",
+      "descripcion":"12 piezas de rolls veganos", 
+      "imagen": "imagenes/rollsVeganos.png",
+      "precio": "600",
+      "cantidad": 0
+    }
+]

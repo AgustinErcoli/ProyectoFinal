@@ -57,7 +57,7 @@
     <!--En este apartado van todos los tipos de productos vendidos en la pagina web-->
     <h1 class="titulo"><strong>Productos</strong></h1>
     <!--variedades de sushi-->
-    <div>
+    <div id="section_variedades">
         <div class="subtitulo">
             <p><strong>Variedades</strong></p>
         </div>
@@ -133,7 +133,7 @@
         </div>
     </div>
     <!--sushi vegetariano-->
-    <div>
+    <div id="section_vegetarianos">
         <div class="subtitulo">
             <p><strong>Vegetarianos</strong></p>
         </div>
@@ -185,7 +185,7 @@
             </div>
         </div>
         <!--sushi vegano-->
-        <div>
+        <div id="section_veganos">
             <div class="subtitulo">
                 <p><strong>Veganos</strong></p>
             </div>
@@ -220,9 +220,9 @@
           <div>
               <strong class="Footer__titulo">Lista de productos</strong>
               <ol class="Footer__lista">
-                  <li><a href="Productos.html">Variedades</a></li>
-                  <li><a href="Productos.html">Vegetarianos</a></li>
-                  <li><a href="Productos.html">Veganos</a></li>
+                  <li><a class="footer__cursor" id="footer_variedades">Variedades</a></li>
+                  <li><a class="footer__cursor" id="footer_vegetarianos">Vegetarianos</a></li>
+                  <li><a class="footer__cursor" id="footer_veganos">Veganos</a></li>
               </ol>
           </div>
           <!--aca van las redes sociales-->
@@ -243,6 +243,10 @@
         <p class="Footer__derechos">© 2021 Capueat, todos los derechos reservados.</p>
       </footer>
     <!--Enlace a JavaScript-->  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/animaciones.js"></script>
 </body>
 </html>

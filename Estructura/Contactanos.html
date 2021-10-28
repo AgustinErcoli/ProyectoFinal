@@ -59,7 +59,7 @@
         <p class="comentario">Si tiene alguna consulta, rellene este formulario y lo responderemos dentro de las proximas 72 horas</p>
     </div>
     <!--Aca va un formulario para hacer alguna consulta sobre el emprendimiento-->
-    <form class="Formulario">
+    <form id="form" class="Formulario">
       <!--Cuadro de texto para el nombre-->
         <div class="mb-3">
             <p><label for="nombre" class="Formulario__fuente">Nombre</label></p>
@@ -96,7 +96,7 @@
         </div>
         <!--Boton de enviar-->
         <div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button id="btn_accion" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
         </div>
         <!--Boton de borrar-->
         <div>
@@ -136,7 +136,26 @@
       <!--aca van los derechos de autor-->
       <p class="Footer__derechos">© 2021 Capueat, todos los derechos reservados.</p>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¡Listo, ya se envio el mensaje!</h5>
+          </div>
+          <div class="modal-body">
+            Le responderemos dentro de las 72 horas.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
   <!--Enlace a JavaScript-->  
+  <script src="../js/formulario.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
