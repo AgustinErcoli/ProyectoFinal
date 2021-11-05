@@ -211,15 +211,6 @@
 .footer__cursor {
   cursor: pointer; }
 
-.modal-body {
-  color: black !important; }
-
-.modal-content {
-  color: black !important; }
-
-.modal-header {
-  color: black !important; }
-
 /* organiza la seccion de carrito en columnas y lineas */
 .Carrito {
   display: grid;

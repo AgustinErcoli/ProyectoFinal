@@ -5,7 +5,6 @@ class Carrito {
 
   agregarAlCarrito() {
     this.cantidad++;
-    //this.precio += precio;
   }
   quitarDelCarrito(cantidad) {
     this.cantidad -= cantidad;
@@ -42,10 +41,8 @@ jQuery(() => {
         // Esto me permite obtener el índice de algún item de un Array
         const index = arrayCanasta.indexOf(producto);
 
-        /* 
-          El método splice permite eliminar un elemento de un Array, 
-          paso el indice y cuantos elementos quiero eliminar
-        */
+        /* El método splice permite eliminar un elemento de un Array, 
+          paso el indice y cuantos elementos quiero eliminar */
         arrayCanasta.splice(index, 1);
         localStorage.setItem("carrito", JSON.stringify(arrayCanasta));
       }
@@ -74,9 +71,7 @@ jQuery(() => {
     }
   }
 
-  /* 
-  Con esta función puedo agregar productos del contenedor a la canasta 
-  */
+  /* Con esta función puedo agregar productos del contenedor a la canasta */
   const insertarCanasta = (producto) => {
 
     elementoCarrito.agregarAlCarrito();
@@ -110,10 +105,7 @@ jQuery(() => {
               </div>
     </div>`);
 
-      /*
-      Inserto un elemento botón al elemento recientemente creado
-      que contenga la función para poder eliminar el prodcuto de la canasta
-      */
+      /* Inserto las funciones correspondientes al producto dentro del carrito */
 
       eliminar(producto);
       sumarAlCarrito(producto);
@@ -124,7 +116,7 @@ jQuery(() => {
 
     } else {
       producto.cantidad++;
-      let cantidadProducto = $(`#cantidad-${producto.id}`); //document.getElementById(`cantidad-${producto.id}`);
+      let cantidadProducto = $(`#cantidad-${producto.id}`);
       cantidadProducto.html(`${producto.cantidad}`);
       let totalProducto = $(`#total-${producto.id}`);
       totalProducto.html(`$ ${precioTotal(producto.precio, producto.cantidad)}`);
@@ -141,9 +133,7 @@ jQuery(() => {
 
   }
 
-  /* 
-  Con esta función puedo agregar lo productos del localStorage a la canasta 
-  */
+  /* Con esta función puedo agregar los productos del localStorage a la canasta */
   const insertarCanastaLocalStorage = (producto) => {
 
     /* Por la cantidad que tiene el producto, hago la llamda al agregar al carrito */
@@ -175,11 +165,6 @@ jQuery(() => {
     </div>
     </div>`);
 
-    /* 
-    Inserto un elemento botón al elemento recientemente creado
-    que contenga la función para poder eliminar el prodcuto de la canasta
-    */
-
     eliminar(producto);
     sumarAlCarrito(producto);
     restarAlCarrito(producto);
@@ -188,6 +173,7 @@ jQuery(() => {
     totalCarrito();
   }
 
+   /* Función para crear productos dinámicamente y crearlos en el contenedor */
   const insertarProductos = () => {
 
     $.get(URL, (respuesta, estado) => {
@@ -233,7 +219,6 @@ jQuery(() => {
 
           }
 
-          //listadoProductos.appendChild(contenidoProducto);
         }
 
         comprar();
@@ -281,7 +266,7 @@ jQuery(() => {
     });
   }
 
-  /* Agrego el método eliminar producto para el boton del tacho */
+  /* Agrego el método sumar al carrito con el boton + */
   const sumarAlCarrito = (producto) => {
 
     $(`#cantidadMas-${producto.id}`).on("click", function () {
@@ -292,7 +277,7 @@ jQuery(() => {
 
   }
 
-  /* Agrego el método eliminar producto para el boton del tacho */
+  /* Agrego el método eliminar del carrito con el boton - */
   const restarAlCarrito = (producto) => {
     $(`#cantidadMenos-${producto.id}`).on("click", function () {
       restoProducto(producto);
@@ -300,7 +285,6 @@ jQuery(() => {
       totalCarrito();
     });
   }
-
 
   /* Calculo el precio total del producto dependiendo de la cantidad */
   const precioTotal = (precio, cantidad) => {
@@ -317,7 +301,44 @@ jQuery(() => {
     sumaTotalCarritoHTML.html(`$ ${sumaTotalCarrito}`);
   }
 
+  let boton = document.getElementById("pagar", JSON);
 
+  boton.addEventListener("click", (e) => {
+      pagar()
+  })
+  
+  /* Api de mercado pago */
+  async function pagar() {
+      const productosToMp = arrayCanasta.map(Element => {
+          let nuevoElemento = {
+            category_id: Element.id,
+            title: Element.nombre,
+            description: Element.descripcion,
+            picture_url: Element.imagen,
+            unit_price: Number(Element.precio),
+            quantity: Number(Element.cantidad),
+            currency_id: "ARS"
+          }
+          return nuevoElemento;
+      })
+  
+      const response = await fetch(
+        "https://api.mercadopago.com/checkout/preferences",
+        {
+          method: "POST",
+          headers: {
+            Authorization: 
+              "Bearer TEST-680675151110839-052307-64069089337ab3707ea2f547622a1b6a-60191006"
+          },
+          body: JSON.stringify({
+            items: productosToMp,
+          })
+      }
+    );
+  
+      const data = await response.json();
+      window.open(data.init_point, "_blank");
+  }
 
 
   //CÓDIGO

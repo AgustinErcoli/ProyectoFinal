@@ -25,7 +25,7 @@
     },
     {
       "id": 4,
-      "nombre": "Combo Vegan'",
+      "nombre": "Combo Vegan",
       "descripcion":"12 piezas de rolls veganos", 
       "imagen": "imagenes/rollsVeganos.png",
       "precio": "600",
